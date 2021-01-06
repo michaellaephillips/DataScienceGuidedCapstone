@@ -1,0 +1,22 @@
+﻿Recommendations for Big Mountain Resort
+Introduction
+Big Mountain Resort of Montana offers on average 350,000 skiers and snowboarders the opportunity to use their facilities. Their operating costs have increased to $1.54M due to the new lift that was installed. The current resort pricing strategy is to add a premium to the average price of resorts in its market segment. The current method lacks an understanding of how each part of their facility could affect their pricing. They would like to capitalize more on their facilities as they feel that they currently are not. The purpose of this report is to provide guidance to Big Mountain Resort in choosing a pricing system that is geared to utilize their facilities and help to lower costs. 
+
+
+Pricing Model
+In building the pricing model, the provided data on 330 resorts in the US was missing pertinent information including state information such as size of the state and population. Due to missing instances of missing prices for both weekday and weekends, several resorts were removed from the initial list. Finally, there were more resorts missing weekday pricing so the model developed only using a total of 277 resorts. Since Big Montain Resort uses the same pricing for both weekday and weekend this model should still be accurate though many resorts have different pricing for both weekday and weekends.  
+Looking at the features that were most effecting the price: vertical drop, area covered by snow making, number of runs, number of chairs, and number of fast quads, it was clear Big mountain resort was not utilizing its facilities as it was amongst the highest for most of the categories. It is also the highest priced resort in Montana.
+When building the model, 30% of the resorts were set aside for cross validation purposes. Through trial and error, I chose to use a random forest model as it performed the best. In comparison to a linear regression where the error in price was $11.79, the random forest model was within $9.54 of the price. To correctly evaluate this, I removed Big Mountain resort from the model as we are working to change this resort pricing. In doing so, the model predicted within $10.39. This model predicted that Big Mountain should change its price to $95.87 if they were to change nothing with their operation.
+Big Mountain suggested several scenarios to help with pricing. 
+Scenario 1: Closing runs
+Closing 1 run did not change ticket price but would lower operating costs. I recommend this as it is an easy way to lower costs for operating while not changing ticket price. 
+Scenario 2: Big Mountain is adding a run, increasing the vertical drop by 150 feet, and installing an additional chair lift.
+This increased ticket price by $1.99
+Scenario 3: Big Mountain is adding a run, increasing the vertical drop by 150 feet, installing an additional chair lift, and adding 2 acres of snow making.
+Though this increased ticket price, it did not increase ticket price more than Scenario 2. I would not recommend this.
+Scenario 4: increasing the longest run by .2 miles and guaranteeing its snow coverage by adding 4 acres of snow making capability.
+This scenario made no difference to ticket price. 
+
+
+Conclusion
+Even though the model predicted the ticket price to be $95.87, I recommend that Big Mountain look into the operating costs of their facilities and use of the lifts and runs. A lesser used run could be closed and help increase revenue. They are at the higher end of the facilities in Montana in terms of prices, but this could be remedied by just changing to a model where weekdays and weekends have different pricing to begin with.
